@@ -1,0 +1,30 @@
+#   WHİLE DÖNGÜSÜ 
+ 
+ isim =""        #isim kısmı ilk tanımlamada boş 
+ while len(isim) == 0: # isim değişkenine herhangi bir değer aranana kadar sürdür 
+    isim = input("Adını Gir: ") 
+ print("Merhaba "+isim)  # isim değişkeni girildiğinde döngü son bulur ve isim yazdırılıp program kapatılır. 
+ 
+ isim = None # isim değişkeni "yok" anlamında "none" ile tanımlanıp 
+ while not isim:         # isim olmadığı sürece döngü devam edecek 
+    isim = input("Adını Gir: ") 
+ print("Merhaba "+isim)  # döngü isim değişkeni girildiğinde sonlandı. 
+ 
+#       FOR DÖNGÜSÜ 
+ 
+# while dögüsü limitsizken for döngüsünün bir limiti vadır. 
+ 
+ for i in range(10): 
+ print(i) 
+ for i in range(50,100+1,2): # aralık belirlerken ilk değer başlangıçtır ve yazılan sayı dahil edilir. 
+  print(i)        # son değer belirlenirken ise dahil olmayacağı göz önünde tutulmalıdır. 
+ 
+ 
+ for i in "Benjamin Kürek": 
+  print(i) 
+ 
+ import time # 10 san geriye saydırıp her bir saydırışta 1 saniye bekletip saydırma bittiğinde "mutlu yıllar" yazıldı. 
+ for saniyeler in range(10,0,-1): 
+    print(saniyeler) 
+   time.sleep(1) 
+ print("Mutlu yıllar!") 
